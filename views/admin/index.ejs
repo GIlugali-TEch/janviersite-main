@@ -1,0 +1,44 @@
+<!-- <h2>Admin</h2> -->
+
+
+<form action="/login" method="Post"  id="formvalidate" name="loginForm">
+
+
+    <div class="wrapper">
+
+        <div class="inner-warpper text-center">
+            <h2 class="title">Login</h2>
+            
+                <div class="input-group">
+                    <label class="palceholder" for="userName">User Name</label>
+                    <input class="form-control" name="username" id="userName" type="text" placeholder="" />
+                    <span class="lighting"></span>
+                </div>
+                <div class="input-group">
+                    <label class="palceholder" for="password">Password</label>
+                    <input class="form-control" name="password" id="userPassword" type="password" placeholder="" />
+                    <span class="lighting"></span>
+                </div>
+
+                <button type="submit" id="login">Login</button>
+                <div class="clearfix supporter">
+                    <div class="pull-left remember-me">
+                        <input id="rememberMe" type="checkbox">
+                        <label for="rememberMe">Remember Me</label>
+                    </div>
+                    <a class="forgot pull-right" href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+    <script src="../js/login.js"></script>
+
+
+</form>

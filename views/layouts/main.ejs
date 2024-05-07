@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=locals.title %>
+    </title>
+    <meta name="Description" content="<%= locals.details %>">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/mediaqueries.css" />
+    <script type="text/javascript" defer src="/js/script.js"></script>
+</head>
+
+<body>
+    <%- include('../partials/search.ejs') %>
+        <div class="contianer">
+            <%- include('../partials/header.ejs') %>
+                <main class="main">
+                    <%- body %>
+                </main>
+               
+
+                <%- include('../partials/footer.ejs') %>
+
+        </div>
+</body>
+
+</html>

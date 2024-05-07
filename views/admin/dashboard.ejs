@@ -1,0 +1,20 @@
+<div class="admin-title" draggable="true">
+  <h2>Posts</h2>
+  <a href="/add-post" class="addPost">Add New</a>
+</div>
+
+<ul class="admin-posts">
+  <% files.forEach(post=> { %>
+
+    <li class="posts">
+      <a href="/post/<%= post._id %>">
+        <%= post %> &nearr;
+      </a>
+
+
+
+    </li>
+
+
+    <% }) %>
+</ul>
